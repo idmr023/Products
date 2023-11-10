@@ -1,6 +1,6 @@
 import './App.css'
 import { useContext } from 'react'
-import { ShoppingCartContext, ShoppingCartProvivder } from '../../context'
+import { ShoppingCartContext, ShoppingCartProvivder } from '../../context/'
 import { BrowserRouter, useParams, useRoutes } from 'react-router-dom'
 import Navbar from '../../Components/Navbar'
 import Home from '../Home'
