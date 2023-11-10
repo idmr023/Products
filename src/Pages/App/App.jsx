@@ -1,6 +1,7 @@
 import './App.css'
 import { BrowserRouter, useParams, useRoutes } from 'react-router-dom'
-import { ShoppingCartContext, ShoppingCartProvivder } from '../../context'
+// import { ShoppingCartContext, ShoppingCartProvivder } from '../../context'
+
 import Navbar from '../../Components/Navbar'
 import Home from '../Home'
 import MyAccount from '../MyAccount'
@@ -10,11 +11,12 @@ import SignIn from '../SignIn'
 import NotFound from '../NotFound'
 import { useContext, useEffect } from 'react'
 import CheckoutSideMenu from '../../Components/CheckoutSideMenu'
+import { ShoppingCartContext, ShoppingCartProvivder } from '../../context'
 
 const AppRoutes = () => {
   const { category } = useParams();
   const context = useContext(ShoppingCartContext);
-  
+
   const navDer = useRoutes([
     { path: '/', element: <Home /> },
     { path: '/clothes', element: <Home /> },
